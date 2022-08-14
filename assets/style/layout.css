@@ -1,0 +1,112 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+  line-height: 1.5; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1320px;
+  padding: 0 12px; }
+
+.bg-red {
+  background-color: #AA0601; }
+  .bg-red a, .bg-red p {
+    color: #fff; }
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+header .logo {
+  display: block;
+  padding: 16px 0; }
+
+header .top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+header .menu-link {
+  display: block;
+  padding: 10px 0;
+  padding-left: 64px;
+  font-size: 20px; }
+
+footer {
+  padding-top: 48px;
+  padding-bottom: 32px; }
+
+.footer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer-menu .footer-link {
+    padding-right: 48px;
+    font-weight: 400; }
+
+.footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .footer-social a {
+    display: block;
+    margin-left: 32px; }
+
+.footer-contact {
+  font-size: 36px;
+  font-weight: 400;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #fff; }
+  .footer-contact span {
+    font-size: 36px;
+    margin-right: 22px;
+    font-weight: 400;
+    vertical-align: middle; }
+
+.copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 32px; }
+  .copyright ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px; }
+    .copyright ul a {
+      display: block;
+      margin-left: 48px; }
+
+/*# sourceMappingURL=layout.css.map */
