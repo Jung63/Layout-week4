@@ -1,0 +1,88 @@
+.store-section{
+  h1{
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 96px;
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
+    @include phone{
+      font-size: 24px;
+      margin-top: 40px;
+    }
+  }
+  .location{
+    display: flex;
+    margin-top: 33px;
+    align-items: center;
+    label{
+      font-size: 24px;
+      @include phone{
+        font-size: 16px;
+      }
+    }
+    select{
+      font-size: 18px;
+      margin-left: 6px;
+      width: 25%;
+      padding: 6px 12px;
+      @include pad{
+        width: 40%;
+      }
+      @include phone{
+        width: 70%;
+      }
+    }
+  }
+}
+.location-list{
+  margin: 41px -12px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  @include pad{
+    margin-bottom: 56px;
+  }
+  @include phone{
+    margin-bottom: 40px;
+  }
+  .location-item{
+    width: 31%;
+    margin: 0 12px 48px;
+    @include pad{
+      width: 44%;
+      margin-bottom: 24px;
+    }
+    @include phone{
+      width: 100%;
+    }
+  }
+  h2{
+    font-size: 24px;
+    padding: 8px 24px 8px;
+    border: 1px solid #00000020;
+    color: #212529;
+  }
+}
+.store-info {
+  padding: 8px 24px;
+  border: 1px solid #00000020;
+  color: #212529;
+  a{
+    color: #212529;
+    &:hover{
+      opacity:0.7;
+    }
+  }
+  li{
+    margin-top: 6px;
+  }
+  span{
+    margin-right: 11px;
+  }
+}
+.store-btn{
+  background: #000000;
+  color: #FFFFFF;
+  display: block;
+  padding: 16px 0;
+  text-align: center;
+}

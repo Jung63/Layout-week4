@@ -3,6 +3,10 @@
   max-width: 100%;
   height: 787px;
   background-size:cover;
+  @include phone{
+    background-image: url(../images/home-header-sm.png);
+    height: 396px;
+  }
 }
 .banner-title{
   display: flex;
@@ -10,7 +14,7 @@
   align-items: flex-end; //交錯軸
   justify-content: center;
   height: 100%;
-  color: #650300;
+  color: $secondary;
   p{
     font-weight: 400;
     font-size: 36px;
@@ -26,30 +30,66 @@
     padding: 6px 12px;
     background-color: #AA0601;
   }
+  @include phone{
+    p{
+      font-size: 16px;
+    }
+    h1{
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
 }
 // 專業
 .professional{
+  text-align: center;
   background-color: #FBF2F2;
   .container {
-      color: #650300;
+      color: $secondary;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      @include phone{
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
       h2 {
-        padding-top: 80px;
         font-weight: 700;
         font-size: 48px;
         text-align: center;
+        @include phone{
+          font-size: 24px;
+        }
       }
     }
 }
 .card-list{
   padding-top: 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: baseline;
+  margin: 0 -12px;
+  @include pad {
+      flex-wrap: wrap;
+      margin: 0;
+    }
   li{
     text-align: center;
-    padding-right: 24px;
+    width: 23%;
+    padding-right: 12px;
+    padding-left: 12px;
+    @include pad{
+      width: 45%;
+      margin: 0 auto;
+    }
+    @include phone{
+      width: 100%;
+      padding-bottom: 24px;
+    }
   }
   img{
     width: 100px;
+    display: block;
+    margin: 0 auto;
     margin-bottom: 16px;
   }
   h3{
@@ -60,8 +100,7 @@
   p{
     font-weight: 400;
     text-align: left;
-    width: 306px;
-    padding-bottom: 80px;
+    max-width: 306px;
     color: #000000;
   }
 }
@@ -69,17 +108,34 @@
 .classic{
   padding-top: 80px;
   padding-bottom: 80px;
+
+  @include pad{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   h2{
-    color: #650300;
+    color: $secondary;
     font-size: 48px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 48px;
+    @include phone{
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
   }
 }
 .classic-list{
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  @include pad{
+    flex-direction: column;
+  }
+  li{
+    @include pad{
+      margin: 0 auto;
+    }
+  }
   img{
     width: 416px;
   }
@@ -90,6 +146,9 @@
     font-style: italic;
     text-align: center;
     margin-top: 8px;
+    @include pad{
+      margin-bottom: 24px;
+    }
   }
 }
 // 聯名
@@ -99,7 +158,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 80px;
-  padding-bottom: 80px;
+  @include pad{
+    background-image: url(../images/index-bg-md.png);
+  }
+  @include phone{
+    background-image: url(../images/index-bg-sm.png);
+  }
+
   h2{
     color: #ffff;
     font-size: 48px;
@@ -110,7 +175,14 @@
 }
 .co-branding-list{
   display: flex;
-  justify-content: center;
+  @include pad{
+    flex-wrap: wrap;
+  }
+  li{
+    @include pad{
+      margin: 0 auto;
+    }
+  }
   img{
     width: 648px;
     height: 240px;
@@ -123,28 +195,46 @@
     text-align: center;
     padding: 8px;
     background-color: #fff;
+    margin-bottom: 80px;
   }
 }
 // 推薦
 .recommend{
   padding-top: 80px;
   padding-bottom: 80px;
+  @include phone{
+    padding-bottom: 40px;
+  }
   h2{
     font-size: 48px;
-    color: #650300;
+    color: $secondary;
     font-weight: 700;
     text-align: center;
     margin-bottom: 48px;
+    @include phone{
+      font-size: 24px;
+      margin-bottom: 24px;
+      margin-top: -40px;
+    }
   }
 }
 .recommend-list{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  @include pad{
+    flex-wrap: wrap;
+  }
   li{
     text-align-last:left;
     width: 23.61%; // 306/1296=0.2361
     box-shadow:0 2px 6px #00000029;
+    @include pad{
+      width: 46%;
+      margin: 0 auto 24px auto;
+    }
+    @include phone{
+      width: 100%;
+    }
   }
 }
 .recommend-text{
@@ -175,17 +265,25 @@ time{
     max-width: 636px;
   }
   h2{
-    color: #650300;
+    color: $secondary;
     font-weight: 700;
     font-size: 48px;
     text-align: center;
     margin-bottom: 48px;
+    @include phone{
+      font-size: 24px;
+      margin-top: -40px;
+      margin-bottom: 24px;
+    }
   }
   p{
     font-weight: 400;
     font-size: 20px;
     text-align: left;
     margin-bottom: 24px;
+    @include phone{
+      font-size: 16px;
+    }
   }
 }
 form{
@@ -203,14 +301,22 @@ form{
 }
 .agree{
   margin-bottom: 48px;
+  @include phone {
+      margin-bottom: 24px;
+    }
 }
 .btn{
   background-color: #AA0601;
   color: #fff;
-  width: 416px;
-  height: 56px;
+  padding: 16px 176px;
   font-weight: 700;
   text-align: center;
   margin: 0 auto;
   display: block;
+  @include pad{
+    padding: 16px 136px;
+  }
+  @include phone{
+    padding: 16px 142px;
+  }
 }
