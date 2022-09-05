@@ -100,7 +100,6 @@
   p{
     font-weight: 400;
     text-align: left;
-    max-width: 306px;
     color: #000000;
   }
 }
@@ -139,7 +138,8 @@
   img{
     width: 416px;
   }
-  p{
+  a{
+    display: block;
     color: #AA0601;
     font-weight: 900;
     font-size: 48px;

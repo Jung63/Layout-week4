@@ -1,10 +1,11 @@
+//外部CDN放最上方，以確保自訂樣式可以覆蓋
+@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200); //icon 
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap); //字體
 @import"./variable";
 @import "./mixin.scss";
 @import "./reset.scss";
 @import "./layout.scss";
 @import"./store";
-@import "./bass.scss";
+@import "./base.scss";
 @import "./index.scss";
-@import url(https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200); //icon 
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css);
-@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,400;1,900&display=swap); //字體
